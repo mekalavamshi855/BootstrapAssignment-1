@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .center-text {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 center-text">
+          <h3>FORM</h3>
+        </div>
+        <div class="col-6 center-text">
+          <h3>TABLE</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+        <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            aria-describedby="nameHelp"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone number"
+            aria-describedby="phoneHelp"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input
+            type="date"
+            class="form-control"
+            id="DOB"
+            aria-describedby="dobHelp"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            aria-describedby="addressHelp"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="male"
+                value="m"
+                required
+              />
+              <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                required
+              />
+              <label class="form-check-label" for="male">Female</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <select class="form-control" id="city">
+            <option>London</option>
+            <option>New York</option>
+            <option>Paris</option>
+            <option>Sydney</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="hobbies">Hobbies</label><br>
+          <input type="checkbox" id="reading" name="hobbies" value="reading">
+          <label for="reading">Reading</label><br>
+          <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+          <label for="traveling">Traveling</label><br>
+          <input type="checkbox" id="sports" name="hobbies" value="sports">
+          <label for="sports">Sports</label><br>
+          <input type="checkbox" id="music" name="hobbies" value="music">
+          <label for="music">Music</label><br>
+        </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+          </form>
+        </div>
+        <div class="col-6">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>SNo</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Gender</th>
+                <th>City</th>
+                <th>Hobbies</th>
+              </tr>            
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Rohit Kumar</td>
+                <td>1234567890</td>
+                <td>Male</td>
+                <td>Chandigarh</td>
+                <td>
+                  <div>Cricket</div>
+                  <div>Hockey</div>
+                  <div>Chess</div>
+                </td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Abhinav Gupta</td>
+                  <td>1234567890</td>
+                  <td>Male</td>
+                  <td>Gurgaon</td>
+                  <td>
+                    <div>Video Games</div>
+                    <div>Badminton</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Pankaj Sharma</td>
+                  <td>1234567890</td>
+                  <td>Male</td>
+                  <td>Panchkula</td>
+                  <td>
+                    <div>Gaming</div>
+                    <div>Volleyball</div>
+                    <div>Travelling</div>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
